@@ -1,8 +1,8 @@
 <?php
 /*
 Plugin Name: Lowercase username
-Plugin URI: https://github.com/Virinum/yourls-case-insensitive-username
-Description: Makes the username case insensitive
+Plugin URI: https://github.com/Virinum/yourls-lowercase-username
+Description: Makes the username lowercase
 Version: 1.0
 Author: Virinum
 Author URI: http://spanier.es/
