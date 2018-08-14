@@ -5,7 +5,8 @@ Plugin for [YOURLS](http://yourls.org) `1.6+`.
 
 Description
 -----------
-Makes the username case insensitive. E.g. `Admin` and `admin` are possible.
+Makes the username lowercase. E.g. `Admin` and `admin` are possible.
+The username has to be lowercase in `config.php`, too.
 
 Installation
 ------------
