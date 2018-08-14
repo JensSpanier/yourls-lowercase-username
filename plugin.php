@@ -1,25 +1,18 @@
 <?php
 /*
-Plugin Name: Your Plugin Name
-Plugin URI: http://github.com/your_name/your_plugin
-Description: One line description of your plugin
+Plugin Name: Lowercase username
+Plugin URI: https://github.com/Virinum/yourls-case-insensitive-username
+Description: Makes the username case insensitive
 Version: 1.0
-Author: Your Name
-Author URI: http://your-site-if-any/
+Author: Virinum
+Author URI: http://spanier.es/
 */
 
 // No direct call
 if( !defined( 'YOURLS_ABSPATH' ) ) die();
 
-/*
+yourls_add_action('pre_login_username_password', 'lowercase_username');
 
- Your code goes here.
- 
- Suggested read:
- https://github.com/YOURLS/YOURLS/wiki/Coding-Standards
- https://github.com/YOURLS/YOURLS/wiki#for-developpers
- https://github.com/YOURLS/YOURLS/wiki/Plugin-List#get-your-plugin-listed-here
- 
- Have fun!
- 
-*/
+function lowercase_username() {
+  $_REQUEST['username'] = strtolower($_REQUEST['username']);
+} 
