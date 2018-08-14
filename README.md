@@ -1,5 +1,5 @@
-Title of your plugin
-====================
+Lowercase username
+==================
 
 Plugin for [YOURLS](http://yourls.org) `1.6+`. 
 
